@@ -1,9 +1,9 @@
+s=0
 i=1
 j=1
-s=0
 while j<4000000:
+ s+=j*(1-j%2)
  j+=i
  i=j-i
- s+=j*(1-j%2)
 
 print(s)
