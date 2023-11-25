@@ -1,9 +1,10 @@
 s=0
 i=1
-j=1
+j=2
 while j<4000000:
- s+=j*(1-j%2)
- j+=i
- i=j-i
+ s+=j
+ for k in range(3):
+  j+=i
+  i=j-i
 
 print(s)
